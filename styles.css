@@ -43,6 +43,7 @@
   }
   
   h2 {
+      margin-top: 25%;
       font-size: 2.2rem;
       position: relative;
       padding-bottom: 0.5rem;
@@ -53,9 +54,9 @@
       content: '';
       position: absolute;
       bottom: 0;
-      left: 0;
-      width: 60px;
-      height: 2px;
+      left: -10rem;
+      width: 35rem;
+      height: 7px;
       background-color: var(--accent-color);
   }
   
@@ -68,6 +69,13 @@
   p {
       margin-bottom: 1.4rem;
   }
+  #services p strong {
+    display: inline-block;
+    margin-top: 5%;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    
+}
   
   /* Layout */
   .container {
@@ -165,8 +173,7 @@
   
   /* Hero Section - Mais limpo */
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.291), rgba(0, 0, 0, 0.365)), url('https://images.pexels.com/photos/3560168/pexels-photo-3560168.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.291), rgba(0, 0, 0, 0.365)), url('https://images.pexels.com/photos/386148/pexels-photo-386148.jpeg?auto=compress&cs=tinysrgb&w=800');
     background-size: cover;
     /*background-color: var(--dark-color);*/
     color: var(--white);
@@ -181,8 +188,9 @@
   }
   
   .hero h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin-bottom: 2rem;
+      font-family: 'noto', 'sarif';
   }
   
   .hero p {
@@ -227,6 +235,11 @@
   .services {
       background-color: var(--white);
   }
+  .services .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas de largura igual */
+    gap: 40px;
+}
   
   .service-grid {
       display: grid;
@@ -255,6 +268,38 @@
       margin-bottom: 1.5rem;
       opacity: 0.8;
   }
+  .process-section .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas de largura igual */
+    gap: 40px;
+}
+.process-section h2{
+    margin-top: 12%;
+}
+.process-section p{
+    margin-top: 12%;
+}
+.team-section .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas de largura igual */
+    gap: 40px;
+}
+.team-section h2{
+    margin-top: 45%;
+}
+.p-color{
+    color: var(--accent-color);
+    margin-bottom: -5px;
+}
+#team p strong {
+    display: inline-block;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    font-size: 1.2rem;
+}
+#team p{
+    margin-bottom: 0.4rem;
+}
   
   /* Responsividade */
   @media (max-width: 1024px) {
@@ -275,6 +320,18 @@
       .container {
           padding: 0 2rem;
       }
+      .services .container {
+        grid-template-columns: 1fr;
+        gap: 0px
+    }
+    .team-section .container {
+        grid-template-columns: 1fr;
+        gap: 0px
+    }
+    .process-section .container {
+        grid-template-columns: 1fr;
+        gap: 0px
+    }
       
       .header-container {
           padding: 1.5rem 2rem;
@@ -285,7 +342,7 @@
       }
       
       h2 {
-          font-size: 2rem;
+          font-size: 1.8rem;
       }
       
       section {
@@ -334,6 +391,15 @@
           display: block;
           padding: 0.5rem 0;
       }
+  
+      h2:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: -2rem;
+        width: 15rem;
+        height: 8px;
+    }
   }
   
   @media (max-width: 576px) {
@@ -350,12 +416,13 @@
       }
       
       .hero h1 {
-          font-size: 2.2rem;
+        margin-top: 7rem;
+        font-size: 1.5rem;
       }
       
       .btn {
           display: block;
           margin: 0.5rem auto;
-          max-width: 250px;
+          max-width: 188px;
       }
   }
