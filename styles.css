@@ -173,7 +173,7 @@
   
   /* Hero Section - Mais limpo */
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.291), rgba(0, 0, 0, 0.365)), url('https://images.pexels.com/photos/386148/pexels-photo-386148.jpeg?auto=compress&cs=tinysrgb&w=800');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.291), rgba(0, 0, 0, 0.365)), url('pexels-joshsorenson-386148.jpg');
     background-size: cover;
     /*background-color: var(--dark-color);*/
     color: var(--white);
@@ -398,7 +398,7 @@
         bottom: 0;
         left: -2rem;
         width: 15rem;
-        height: 8px;
+        height: 3px;
     }
   }
   
