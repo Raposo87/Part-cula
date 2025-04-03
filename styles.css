@@ -285,7 +285,7 @@
     gap: 40px;
 }
 .team-section h2{
-    margin-top: 45%;
+    margin-top: 8%;
 }
 .p-color{
     color: var(--accent-color);
@@ -369,9 +369,9 @@
       }
       
       nav.open {
-        width: 13rem;
+        width: 11rem;
         right: 0;
-        height: 24rem;
+        height: 21rem;
       }
       
       .close-nav {
