@@ -300,6 +300,12 @@
 #team p{
     margin-bottom: 0.4rem;
 }
+footer{
+    background-color: #203e42;
+    color: #e4dedd;
+    text-align: center;
+    padding: 20px;
+}
   
   /* Responsividade */
   @media (max-width: 1024px) {
